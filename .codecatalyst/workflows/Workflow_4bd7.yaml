@@ -2,6 +2,7 @@ Name: Workflow_4bd7
 RunMode: SUPERSEDED
 Compute:
   Type: EC2
+  SharedInstance: true
   Fleet: Linux.Arm64.2XLarge
 SchemaVersion: "1.0"
 
@@ -33,6 +34,3 @@ Actions:
       Container:
         Registry: ECR
         Image: public.ecr.aws/jsii/superchain:1-bookworm-slim-node20
-    Compute:
-      Type: EC2
-      Fleet: Linux.Arm64.2XLarge
